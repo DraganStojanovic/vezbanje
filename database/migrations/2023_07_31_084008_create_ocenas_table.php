@@ -8,6 +8,8 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     *  @param \Illuminate\Database\Schema\Blueprint
      */
     public function up(): void
     {
@@ -19,7 +21,6 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      */
