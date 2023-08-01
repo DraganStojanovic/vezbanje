@@ -12,7 +12,16 @@ class OceneController extends Controller
      */
     public function index()
     {
-        //
+//        return view('welcome', [
+//            "ocene" => Ocene::all(),
+//        ]);
+
+                $ocene = Ocene::all();
+
+        return view('welcome', [
+            "ocene" => $ocene,
+        ]);
+
     }
 
     /**

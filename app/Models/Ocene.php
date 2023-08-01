@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Ocene extends Model
 {
     use HasFactory;
+    const TABLE = "ocene";
+    protected $table = self::TABLE;
+
+    protected $fillable = [
+        "predmet","ocena","profesor"
+    ];
 }

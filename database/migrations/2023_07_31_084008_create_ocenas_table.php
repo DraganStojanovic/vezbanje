@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('ocene', function (Blueprint $table) {
             $table->id();
-            $table->string('string');
+            $table->string('predmet',64);
             $table->unsignedInteger('ocena');
-            $table->string('professor');
+            $table->string('profesor',64);
             $table->timestamps();
         });
     }
