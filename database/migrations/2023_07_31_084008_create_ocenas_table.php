@@ -15,10 +15,15 @@ return new class extends Migration
     {
         Schema::create('ocene', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id')->unsigned();
             $table->string('predmet',64);
             $table->unsignedInteger('ocena');
             $table->string('profesor',64);
             $table->timestamps();
+        });
+
+        Schema::table('ocene', function($table) {
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
     /**

@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 Route::get('/', [\App\Http\Controllers\OceneController::class, 'index']);
+//Route::view('dodaj-ocenu', 'addGrade');
+Route::get('/', [\App\Http\Controllers\OceneController::class, 'index']);
+Route::post('/add-user-grade', [\App\Http\Controllers\OceneController::class, 'addGrade']);
+
