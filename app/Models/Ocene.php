@@ -12,6 +12,6 @@ class Ocene extends Model
     protected $table = self::TABLE;
 
     protected $fillable = [
-        "predmet","ocena","profesor"
+        "predmet","ocena","profesor","user_id",
     ];
 }
